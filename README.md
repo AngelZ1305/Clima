@@ -57,6 +57,15 @@ Tailwind CSS instalado vía npm
 
 Nota: Si solo deseas usar la aplicación sin modificar estilos, no es necesario instalar Node.js.
 
+Screenshots
+<p>
+<img src="src/images/screenshots/desktop.png" width="650"/>
+<br>
+<img src="src/images/screenshots/mobile.png" width="250"/>
+<br> 
+<img src="src/images/screenshots/mobile2.png" width="250"/>
+</p>
+
 Instalación
 1- Clonar el repositorio
 git clone <url-del-repositorio>
