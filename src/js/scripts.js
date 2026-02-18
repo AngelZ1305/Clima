@@ -277,6 +277,5 @@ window.searchCity = async function searchCity(cityRaw) {
 };
 
 
-
 window.saveCity?.(todayData.name);
 window.renderLastCities?.();
