@@ -23,7 +23,7 @@ function renderFavoriteCities() {
   const container = document.getElementById("favorite-places");
   const list = document.getElementById("favorite-places-list");
 
-  const favorites = JSON.parse(localStorage.getItem("favoriteCities")) || [];
+  const favorites = getFavorites();
 
   list.innerHTML = "";
 

@@ -21,11 +21,6 @@ window.updateForecastByCity = async function updateForecastByCity(cityName) {
   setupForecastCarousel(days);
 };
 
-window.updateForecastByCity = async function updateForecastByCity(cityName) {
-  const forecastData = await getForecastByCity(cityName);
-  const days = pick5Days(forecastData);
-  setupForecastCarousel(days);
-};
 
 function pick5Days(forecastData) {
   const list = forecastData.list;
