@@ -18,7 +18,7 @@
     <header class="text-center mb-6">
       <div>
         <h1 class="text-3xl font-bold tracking-wide">Clima App</h1>
-        <button id="fav-btn" class="p-2 rounded-full bg-white/20 hover:bg-white/30 transition">
+        <button id="fav-btn" type="button" class="p-2 rounded-full bg-white/20 hover:bg-white/30 transition">
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
             stroke="currentColor" class="w-6 h-6">
             <path stroke-linecap="round" stroke-linejoin="round"
@@ -31,6 +31,7 @@
 
     <section class="mb-6">
       <form id="weather-form" class="flex gap-2">
+        <label for="city-input" class="sr-only">Ciudad</label>
         <input type="text" id="city-input" placeholder="Ej. Hermosillo" list="city-suggestions" required
           class="flex-1 px-4 py-2 rounded-xl bg-white/30 placeholder-white/70 text-white focus:outline-none focus:ring-2 focus:ring-white">
         <datalist id="city-suggestions"></datalist>
@@ -47,7 +48,7 @@
 
 
     <section id="weather-result" class="text-center hidden">
-      <img id="weather-icon" class="w-30 mx-auto" />
+      <img id="weather-icon" alt="Weather Icon" class="w-30 mx-auto"/>
       <h2 id="city-name" class="text-2xl font-semibold mb-2"></h2>
 
       <div class="flex flex-col items-center">
@@ -99,11 +100,11 @@
 
   </main>
 
-  <div>
+  <aside>
     <section id="activities"
       class="w-full max-w-md bg-white/20 backdrop-blur-lg rounded-3xl shadow-2xl p-6 text-white mt-6 hidden">
 
-      <h3 class="text-xl font-semibold mb-3 text-center">Actividad recomendada</h3>
+      <h2 class="text-xl font-semibold mb-3 text-center">Actividad recomendada</h2>
 
       <div class="text-center">
         <p id="activity-text" class="text-lg"></p>
@@ -113,9 +114,9 @@
     <section id="last-places"
       class="w-full max-w-md bg-white/20 backdrop-blur-lg rounded-3xl shadow-2xl p-6 text-white mt-6 hidden">
 
-      <h3 class="text-xl font-semibold mb-3 text-center">
-        Últimas lugares buscados
-      </h3>
+      <h2 class="text-xl font-semibold mb-3 text-center">
+        Últimos lugares buscados
+      </h2>
 
       <div id="last-places-list" class="flex flex-wrap gap-2 justify-center">
       </div>
@@ -124,14 +125,14 @@
     <section id="favorite-places"
       class="w-full max-w-md bg-white/20 backdrop-blur-lg rounded-3xl shadow-2xl p-6 text-white mt-6 hidden">
 
-      <h3 class="text-xl font-semibold mb-3 text-center">
+      <h2 class="text-xl font-semibold mb-3 text-center">
         Lugares favoritos
-      </h3>
+      </h2>
 
       <div id="favorite-places-list" class="flex flex-wrap gap-2 justify-center"></div>
 
     </section>
-  </div>
+  </aside>
 
 
 
